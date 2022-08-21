@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #fff;
+}
+
+.circle {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    top: -40px;
+    left: 30px;
+    z-index: -1;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 150px;height: 150px;border: 1px solid #ddd;border-radius: 50%;left: -100px;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    left: -70px;
+    top: 90px;
+}
+
+/* nav section  */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 4%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    padding: 5px 8px;
+    margin: 0 5px;
+    font-size: .9rem;
+    color: #000;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+.navbar .nav-link:hover {
+    color: #00e400;
+}
+
+.icons .fas {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ccc;
+    cursor: pointer;
+    transition: .3s linear;
+    border: 1px solid #ccc;
+}
+
+.icons .fas:first-child {
+    margin-right: 8px;
+}
+
+.icons .fas:hover {
+    color: #00e400;
+    background: #ccc;
+    border: 1px solid #fff;
+}
+
+/* image section  */
+
+img {
+    position: absolute;
+    width: 50%;
+    height: 95vh;
+    top: 20px;
+    right: 0;
+    border-radius: 5px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* home Container section */
+
+.container {
+    padding: 2% 4%;
+    max-width: 480px;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h2 span {
+    color: #048004;
+}
+
+p {
+    font-size: .9rem;
+    color: #444;
+    width: 90%;
+}
+
+/* video tag */
+
+video {
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* button section  */
+
+.button {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: .8rem 1.8rem;
+    background: #048004;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .2);
+    transition: .3s linear;
+}
+
+.btn:hover {
+    background: #fff;
+    box-shadow: 1px 1px 15px #00e400;
+    color: #048004;
+}
+
+.explore {
+    color: #048004;
+    background: #fff;
+}
+
+.explore:hover {
+    color: #fff;
+    background: #048004;
+}
